@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAspNet.Tests", "HelloA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWebApp", "FirstWebApp\FirstWebApp.csproj", "{C91CE7C7-817F-4EFA-868B-B47934B4BB7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationWebApp", "ValidationWebApp\ValidationWebApp.csproj", "{212CB6C9-8BF8-4806-B622-2624CC9208D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateWebApp", "TemplateWebApp\TemplateWebApp.csproj", "{DBA12460-BF2B-43F5-B9CF-9DA772642719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C91CE7C7-817F-4EFA-868B-B47934B4BB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C91CE7C7-817F-4EFA-868B-B47934B4BB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C91CE7C7-817F-4EFA-868B-B47934B4BB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212CB6C9-8BF8-4806-B622-2624CC9208D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212CB6C9-8BF8-4806-B622-2624CC9208D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212CB6C9-8BF8-4806-B622-2624CC9208D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212CB6C9-8BF8-4806-B622-2624CC9208D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA12460-BF2B-43F5-B9CF-9DA772642719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA12460-BF2B-43F5-B9CF-9DA772642719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA12460-BF2B-43F5-B9CF-9DA772642719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA12460-BF2B-43F5-B9CF-9DA772642719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
