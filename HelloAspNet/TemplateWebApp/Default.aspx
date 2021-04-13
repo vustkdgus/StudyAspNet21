@@ -7,5 +7,6 @@
         <p>
             rolem ipsum....
         </p>
+        <asp:SiteMapPath ID="SmpMain" runat="server"></asp:SiteMapPath>
     </div>
 </asp:Content>
