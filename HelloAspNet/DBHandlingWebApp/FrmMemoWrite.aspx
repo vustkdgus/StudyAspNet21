@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmMemoWrite.aspx.cs" Inherits="DBHandlingWebApp.FrmMemoWrite" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmMemoWrite.aspx.cs" Inherits="DbHandlingWebApp.FrmMemoWrite" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>메모입력</title>
 </head>
 <body>
@@ -15,11 +15,10 @@
             이메일 : <asp:TextBox ID="TxtEmail" runat="server" /><br />
             메모 : <asp:TextBox ID="TxtTitle" runat="server" /><br />
 
-            <asp:Button ID="BtnWrite" runat="server" Text="저장" OnClick="BtnWrite_Click" />&nbsp; <!-- 스페이스 -->
+            <asp:Button ID="BtnWrite" runat="server" Text="저장" OnClick="BtnWrite_Click" />&nbsp;<!-- 스페이스동일 -->
             <asp:Button ID="BtnList" runat="server" Text="리스트" OnClick="BtnList_Click" />
             <hr />
             <asp:Label ID="LblResult" runat="server" />
-
         </div>
     </form>
 </body>

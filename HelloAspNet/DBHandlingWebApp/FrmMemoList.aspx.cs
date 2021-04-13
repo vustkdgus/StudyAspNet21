@@ -7,27 +7,29 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Z.Dapper.Plus;
 
-namespace DBHandlingWebApp
+namespace DbHandlingWebApp
 {
-    public partial class FrmMemoList : System.Web.UI.Page
+    public partial class FrmMemoList : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             var connString = ConfigurationManager.ConnectionStrings["ConnString"].ConnectionString;
 
             using (var conn = new SqlConnection(connString))
             {
-                if (conn.State == System.Data.ConnectionState.Closed) conn.Open();
+                if (conn.State == ConnectionState.Closed) conn.Open();
 
                 SqlCommand cmd = new SqlCommand("ListMemo", conn);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, "Memos");
 
-                GrdMemoList.DataSource = ds;
-                GrdMemoList.DataBind();
+                GrvMemoList.DataSource = ds;
+                GrvMemoList.DataBind();
             }
         }
 
@@ -47,8 +49,8 @@ namespace DBHandlingWebApp
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, "Memos");
 
-                GrdMemoList.DataSource = ds.Tables[0].DefaultView;
-                GrdMemoList.DataBind();
+                GrvMemoList.DataSource = ds; //.Tables[0].DefaultView;
+                GrvMemoList.DataBind();
             }
         }
     }

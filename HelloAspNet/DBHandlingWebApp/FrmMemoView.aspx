@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmMemoView.aspx.cs" Inherits="DBHandlingWebApp.FrmMemoView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmMemoView.aspx.cs" Inherits="DbHandlingWebApp.FrmMemoView" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>메모상세보기</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
             작성일 : <asp:Label ID="LblPostDate" runat="server"></asp:Label> <br />
             IP주소 : <asp:Label ID="LblPostIP" runat="server"></asp:Label> <br />
             <hr />
-            <asp:HyperLink ID="LnkMemorList" runat="server" NavigateUrl="~/FrmMemoList.aspx">리스트</asp:HyperLink>
+            <asp:HyperLink ID="LnkMemrList" runat="server" NavigateUrl="~/FrmMemoList.aspx">리스트</asp:HyperLink>
         </div>
     </form>
 </body>

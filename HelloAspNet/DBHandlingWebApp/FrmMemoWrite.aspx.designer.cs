@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace DBHandlingWebApp
+namespace DbHandlingWebApp
 {
 
 
