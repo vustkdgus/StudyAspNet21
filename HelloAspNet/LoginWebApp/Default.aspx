@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>메인페이지</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                 </AnonymousTemplate>
                 <LoggedInTemplate>
                     <asp:LoginStatus ID="LgsLogout" runat="server" LogoutText="로그아웃" />
-                    <a href="Logout.aspx">로그아웃</a>
+                    <a href="Logout.aspx">로그아웃</a> |
                     <asp:HyperLink ID="LnkUserInfo" runat="server" NavigateUrl="~/UserInfo.aspx">
                         <asp:LoginName ID="LgnUser" runat="server" />
                     </asp:HyperLink>
