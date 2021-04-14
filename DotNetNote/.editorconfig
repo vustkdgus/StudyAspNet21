@@ -1,4 +1,0 @@
-﻿[*.cs]
-
-# CS2001: 'D:\GitRepository\StudyAspNet21\DotNetNote\Helpers\Class1.cs' 소스 파일을 찾을 수 없습니다.
-dotnet_diagnostic.CS2001.severity = none

@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{01FF6D06-A9B4-49B3-8F85-49839B0163F6}</ProjectGuid>
+    <ProjectGuid>{AC1EB9B5-2C02-4363-A032-6A29D761527A}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -124,9 +124,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="..\.editorconfig">
-      <Link>.editorconfig</Link>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\dnn\blank.gif" />
     <Content Include="images\dnn\commentcount.gif" />
@@ -346,7 +343,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj">
-      <Project>{48C01A2F-FC0F-4927-B3FB-3FB3B1443332}</Project>
+      <Project>{6EF9513E-C7D0-4F1F-AAB3-9D21EAF32ADE}</Project>
       <Name>Helpers</Name>
     </ProjectReference>
   </ItemGroup>
@@ -363,9 +360,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4240</DevelopmentServerPort>
+          <DevelopmentServerPort>8910</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4240/</IISUrl>
+          <IISUrl>http://localhost:8910/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
