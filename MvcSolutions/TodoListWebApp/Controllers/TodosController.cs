@@ -5,16 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using TodoListWebApp.Data;
 using TodoListWebApp.Models;
 
 namespace TodoListWebApp.Controllers
 {
     public class TodosController : Controller
     {
-        private readonly TodoListWebAppContext _context;
+        private readonly AppDbContext _context;
 
-        public TodosController(TodoListWebAppContext context)
+        public TodosController(AppDbContext context)
         {
             _context = context;
         }
@@ -22,25 +21,7 @@ namespace TodoListWebApp.Controllers
         // GET: Todos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Task.ToListAsync());
-        }
-
-        // GET: Todos/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var todo = await _context.Task
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (todo == null)
-            {
-                return NotFound();
-            }
-
-            return View(todo);
+            return View(await _context.Todos.ToListAsync());
         }
 
         // GET: Todos/Create
@@ -76,7 +57,7 @@ namespace TodoListWebApp.Controllers
                 return NotFound();
             }
 
-            var todo = await _context.Task.FindAsync(id);
+            var todo = await _context.Todos.FindAsync(id);
             if (todo == null)
             {
                 return NotFound();
@@ -89,7 +70,7 @@ namespace TodoListWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,IsDone,CreationDate")] Todo todo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title")] Todo todo)
         {
             if (id != todo.Id)
             {
@@ -100,6 +81,7 @@ namespace TodoListWebApp.Controllers
             {
                 try
                 {
+                    todo.CreationDate = DateTime.Now;
                     _context.Update(todo);
                     await _context.SaveChangesAsync();
                 }
@@ -119,38 +101,30 @@ namespace TodoListWebApp.Controllers
             return View(todo);
         }
 
-        // GET: Todos/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Done(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var todo = await _context.Task
+            var todo = await _context.Todos
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (todo == null)
             {
                 return NotFound();
             }
-
-            return View(todo);
-        }
-
-        // POST: Todos/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var todo = await _context.Task.FindAsync(id);
-            _context.Task.Remove(todo);
+            todo.IsDone = true;
+            _context.Todos.Update(todo);
             await _context.SaveChangesAsync();
+
+            //return RedirectToAction("Index");
             return RedirectToAction(nameof(Index));
         }
-
+        
         private bool TodoExists(int id)
         {
-            return _context.Task.Any(e => e.Id == id);
+            return _context.Todos.Any(e => e.Id == id);
         }
     }
 }

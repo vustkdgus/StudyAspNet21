@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TodoListWebApp.Models
 {
@@ -13,6 +9,5 @@ namespace TodoListWebApp.Models
         }
 
         public DbSet<Todo> Todos { get; set; }
-
     }
 }

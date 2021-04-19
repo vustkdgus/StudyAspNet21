@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TodoListWebApp.Models;
-using TodoListWebApp.Data;
 
 namespace TodoListWebApp
 {
@@ -28,9 +27,6 @@ namespace TodoListWebApp
             services.AddControllersWithViews();
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnString")));
-
-            services.AddDbContext<TodoListWebAppContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("TodoListWebAppContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
