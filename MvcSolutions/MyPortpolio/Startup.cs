@@ -70,7 +70,7 @@ namespace MyPortpolio
 
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseSession(); //세션사용  없으면 HttpContext.Session에 접근불가
+            app.UseSession(); // 세션사용 없으면 HttpContext.Session접근불가!
 
             app.UseEndpoints(endpoints =>
             {

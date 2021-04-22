@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
 using MyPortpolio.Data;
 using MyPortpolio.Models;
@@ -21,13 +20,14 @@ namespace MyPortpolio.Controllers
         }
 
         // GET: Contacts
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index([Bind("Id,Name,Email,Contents")] Models.Contact contact)
+        public async Task<IActionResult> Index([Bind("Id,Name,Email,Contents")] Contact contact)
         {
             if (ModelState.IsValid)
             {
@@ -37,16 +37,14 @@ namespace MyPortpolio.Controllers
                     _context.Add(contact);
                     await _context.SaveChangesAsync();
 
-                    ViewBag.Message = "감사합니다, 연락드리겠습니다.";
+                    ViewBag.Message = "감사합니다. 연락드리겠습니다.";
                 }
                 catch (Exception ex)
                 {
                     ModelState.Clear();
                     ViewBag.Message = $"예외가 발생했습니다. {ex.Message}";
                 }
-                
-
-                //return RedirectToAction(nameof(Index));
+                // return RedirectToAction(nameof(Index));
             }
             return View();
         }

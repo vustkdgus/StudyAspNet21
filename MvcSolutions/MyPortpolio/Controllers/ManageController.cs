@@ -54,10 +54,11 @@ namespace MyPortpolio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Cate,Contents,RegDate")] Manage manage)
+        public async Task<IActionResult> Create([Bind("Id,Cate,Subject,Contents,RegDate")] Manage manage)
         {
             if (ModelState.IsValid)
             {
+                manage.RegDate = DateTime.Now;
                 _context.Add(manage);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +87,7 @@ namespace MyPortpolio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Cate,Contents,RegDate")] Manage manage)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Cate,Subject,Contents,RegDate")] Manage manage)
         {
             if (id != manage.Id)
             {

@@ -6,7 +6,11 @@
     @Html.Partial("NavPage.cshtml")
     <div class="page-header header-filter" style="background-image: url('../assets/img/bg7.jpg'); background-size: cover; background-position: top center;">
         <div class="container">
-            @RenderBody()
+            <div class="row">
+                <div class="col">
+                    @RenderBody()
+                </div>
+            </div>
         </div>
     </div>
     @Html.Partial("FooterPage.cshtml")
