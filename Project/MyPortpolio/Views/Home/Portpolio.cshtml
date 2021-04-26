@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Portpolio";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<div class="row">
+
+    <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">Portpolio</h2>
+        <h5 class="description">작업했던 포트폴리오들 입니다.</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 ml-auto mr-auto">
+        <div class="profile-tabs">
+            <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#HTML" role="tab" data-toggle="tab">
+                        <i class="fab fa-internet-explorer"></i>  HTML
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#CSharp" role="tab" data-toggle="tab">
+                        <i class="fab fa-cuttlefish"></i> C#
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
+                        <i class="fas fa-bookmark"></i> Favorite
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="tab-content tab-space">
+    <div class="tab-pane active text-center " id="HTML">
+        <div class="row">
+            <div class="ml-auto">
+                <img src="~/assets/img/examples/HTML1.png" class="rounded" height="550" style="border:1px solid black;">
+                <img src="~/assets/img/examples/HTML2.png" class="rounded" height="550" style="border:1px solid black;">
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane text-center gallery" id="CSharp">
+        <div class="row">
+            <div class="col-md-3 ml-auto" >
+                <img src="~/assets/img/examples/Csharp04.png" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Csharp02.png" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Csharp03.png" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Csharp10.png" class="rounded" style="border:1px solid black;">
+
+            </div>
+            <div class="col-md-3 mr-auto">
+                <img src="~/assets/img/examples/Csharp05.png" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Csharp06.png" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Csharp09.png" class="rounded" style="border:1px solid black;">
+
+            </div>
+
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="tab-pane text-center gallery" id="favorite">
+        <div class="row">
+            <div class="col-md-3 ml-auto">
+                <img src="~/assets/img/examples/Favorite1.jpg" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Favorite2.jpg" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Favorite3.jpg" class="rounded" style="border:1px solid black;">
+            </div>
+            <div class="col-md-3 mr-auto">
+                <img src="~/assets/img/examples/Favorite4.jpg" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Favorite5.jpg" class="rounded" style="border:1px solid black;">
+                <img src="~/assets/img/examples/Favorite6.jpg" class="rounded" style="border:1px solid black;">
+            </div>
+        </div>
+    </div>
+</div>

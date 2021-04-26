@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortpolio", "MyPortpolio\MyPortpolio.csproj", "{6C931C12-695C-4EF0-9E0C-7D4E5EECBC53}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TotalDatabase", "TotalDatabase\TotalDatabase.sqlproj", "{72264EE7-C805-4A76-82E7-68ED8A1E23A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C931C12-695C-4EF0-9E0C-7D4E5EECBC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C931C12-695C-4EF0-9E0C-7D4E5EECBC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C931C12-695C-4EF0-9E0C-7D4E5EECBC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C931C12-695C-4EF0-9E0C-7D4E5EECBC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72264EE7-C805-4A76-82E7-68ED8A1E23A1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19AC37C8-9945-4211-9118-EDC7C8E947FA}
+	EndGlobalSection
+EndGlobal

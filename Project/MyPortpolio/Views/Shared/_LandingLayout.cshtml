@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@Html.Partial("HeadPage.cshtml")
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<body class="landing-page sidebar-collapse">
+    @Html.Partial("NavPage.cshtml")
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/BlueOcean.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title">My Portpolio Site</h1>
+                    <h4>This portpolio is project for my employment.</h4>
+                    <br />
+                    <a href="https://github.com/vustkdgus" target="_blank" class="btn btn-danger btn-raised btn-lg">
+                        <i class="fab fa-github"></i> Watch My GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-raised">
+        <div class="container">
+            <div class="section text-center">
+                <div class="row">
+                    <div class="col mr-auto">
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">Learned List</h2>
+                        <h4 class="description">This is Learned List.</h4>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-info">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h4 class="info-title">HTML5</h4>
+                                <p><a href="https://github.com/vustkdgus/StudyHtml">Click here</a> to go my HTML GitHub</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-success">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4 class="info-title">DataBase</h4>
+                                <p><a href="https://github.com/vustkdgus/StudySqlServer">Click here</a> to go my DataBase GitHub</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="fab fa-cuttlefish"></i>
+                                </div>
+                                <h4 class="info-title">C-sharp</h4>
+                                <p><a href="https://github.com/vustkdgus/StudyCsharp21">Click here</a> to go my C# GitHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("FooterPage.cshtml")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
