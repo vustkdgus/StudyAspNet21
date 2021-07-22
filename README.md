@@ -1,3 +1,4 @@
+
 # StudyAspNet21
 
 
@@ -18,16 +19,9 @@
 
 ## Index <a id = "Index" text-align="center" text-size="20pm">
 
-![Index](https://github.com/vustkdgus/StudyHtml/blob/main/ref_images/result04.png "팝업레이아웃")
+![Index](https://user-images.githubusercontent.com/38821846/126596439-7eb969f3-72b4-4775-bc04-bae8d0085e3c.png)
    
-   
-[Index소스](https://github.com/vustkdgus/StudyHtml/tree/main/01_HTML)
-
-### HTML이란?
-
-
--------------------
-
+-------------------  
 ## CSS3 <a id = "CSS">
 CSS 기본 학습
 
