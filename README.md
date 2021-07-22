@@ -1,13 +1,13 @@
 # StudyAspNet21
 
 
-![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=AspNet학습%20&fontSize=50&animation=fadeIn&fontAlignY=38)
+![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=Asp.Net학습%20&fontSize=50&animation=fadeIn&fontAlignY=38)
 <p align='center'><b> ASP.NET 학습 리포지토리 </b></p>
 <p align='center'>
    <br>
     <img src="https://img.shields.io/badge/HTML%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
-    <img src="https://img.shields.io/badge/CSS3%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Javascript%20-%2300D8FF.svg?&style=for-the-badge&&logoColor=white"/>
+    <img src="https://img.shields.io/badge/MySQL%20-%2300D8FF.svg?&style=for-the-badge&&logoColor=white"/>
+    <img src="https://img.shields.io/badge/json%20-%2300D8FF.svg?&style=for-the-badge&&logoColor=white"/>
 </p>
 <br>
 <br>
