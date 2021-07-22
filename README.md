@@ -47,6 +47,9 @@
 ## Board<a id = "Board">
 
 ![Board01](https://user-images.githubusercontent.com/38821846/126596846-1b0de5f1-1dd9-460d-9089-9576b760277b.png)
+<br>
+<br> 
+
 ![Board02](https://user-images.githubusercontent.com/38821846/126596856-c90d5733-730f-4b0b-a1a7-673f74652c6b.png)
 
 <br>
