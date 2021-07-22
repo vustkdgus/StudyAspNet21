@@ -13,18 +13,10 @@
 <br>
 
 
-## List
- - [HTML](#HTML)
- - [CSS3](#CSS)
- - [Javascript](#Javascript)
- - [Project](#Project)
-
-<br>
-<br>
 
 -------------------
 
-## HTML5 <a id = "HTML">
+## HTML5 <a id = "HTML" text-align="center" text-size="20pm">
 HTML 기본학습
 
 [HTML소스](https://github.com/vustkdgus/StudyHtml/tree/main/01_HTML)
